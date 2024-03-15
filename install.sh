@@ -30,3 +30,12 @@ cd /home/martin
 wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.5.3/obsidian_1.5.8_amd64.deb
 sudo dpkg -i obsidian_1.5.8_amd64.deb
 rm -rf obsidian_1.5.8_amd64.deb
+echo "installing bloodhound python"
+pipx install bloodhound
+echo "addons"
+firefox https://addons.mozilla.org/en-US/firefox/addon/foxyproxy-standard/
+firefox https://addons.mozilla.org/en-US/firefox/addon/wappalyzer/
+echo "installing golang"
+sudo apt install golang-go -y
+echo "running nxc for the first time"
+nxc --version
