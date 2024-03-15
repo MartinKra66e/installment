@@ -19,6 +19,14 @@ echo "installing netexec with pipx"
 git clone https://github.com/Pennyw0rth/NetExec.git
 cd netexec
 pipx install . -y
-echo "installing terminator"
-sudo apt install terminator -y
 echo "putting crackeverything into /home/martin/.local/bin"
+cd ..
+wget https://raw.githubusercontent.com/overgrowncarrot1/CrackEverything6/main/CrackEverything6.py
+mv CrackEverything6.py /home/martin/.local/bin
+echo "installing flameshot"
+sudo apt install flameshot -y
+echo "installing obsidian"
+cd /home/martin
+wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.5.3/obsidian_1.5.8_amd64.deb
+sudo dpkg -i obsidian_1.5.8_amd64.deb
+rm -rf obsidian_1.5.8_amd64.deb
